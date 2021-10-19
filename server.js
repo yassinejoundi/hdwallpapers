@@ -44,7 +44,7 @@ app.get('/img', async(req, res)=>{
   });
   
   try {
-      fs.writeFile(params.path, imgFile, (err) => {
+      fs.writeFile(/*params.path*/ 'test.jpg', imgFile, (err) => {
           if (err)
               console.log('error: ', err);
       });
