@@ -11,7 +11,7 @@ app.use(cors({origin: "http://localhost:8081"}));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
-app.use(express.static('static/dist'))
+app.use(express.static('front'))
 
 app.get('/links', async(req, res)=>{
   const link = req.query.link;
